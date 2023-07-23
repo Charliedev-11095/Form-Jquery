@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+  <!-- Agregar las hojas de estilo de Bootstrap y el tema opcional -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+
+  <!-- Agregar el estilo de jQuery UI y el tema opcional -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+  
+
+</head>
+<body>
+  <div class="container">
+    <h2>Formulario de Registro</h2>
+    <form id="registro-form">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="text" class="form-control datepicker" id="fechaNacimiento" name="fechaNacimiento" placeholder="Seleccione su fecha de nacimiento" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <label for="hobbie">Hobbies:</label>
+            <select class="form-control" id="hobbie" name="hobbie" required>
+              <option value="1">Seleccione un hobbie</option>
+              <option value="2">Pintar</option>
+              <option value="3">Jardinería</option>
+              <option value="4">Cocinar</option>
+              <option value="5">Fotografía</option>
+            </select>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="form-group">
+
+            <div class="form-group">
+              <label for="edad">Edad en años:</label>
+              <input type="text" class="form-control" id="edad" readonly>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="estado">Estado:</label>
+            <select class="form-control" id="estado">
+              <option value="Jalisco">Jalisco</option>
+              <option value="Quintana Roo">Quintana Roo</option>
+              <option value="Chihuahua">Chihuahua</option>
+              <option value="Oaxaca">Oaxaca</option>
+              <option value="Baja California">Baja California</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="ciudad">Ciudad:</label>
+            <select class="form-control" id="ciudad" disabled></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="autocomplete-input">País:</label>
+            <input type="text" class="form-control" id="autocomplete-input" placeholder="Ingrese un país" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="phone-input">Teléfono:</label>
+            <input type="text" class="form-control" name="telefono" id="phone-input">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12">
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Incluir las bibliotecas de jQuery y Bootstrap -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
